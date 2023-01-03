@@ -1,0 +1,266 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+i{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/**
+* !Navbar CSS 
+**/
+.navbar{
+    background-color: #000000;
+    color: white;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 90px;
+}
+
+.cart{
+    background-color: #fff;
+    color: #1b1b1b;
+    padding: 5px;
+    font-size: 30px;
+    border-radius: 4px;
+    position: relative;
+}
+.cartAmount{
+    font-size: 16px;
+    background-color: red;
+    color: #fff;
+    position: absolute;
+    top: -15px;
+    right: -7px;
+    padding: 3px;
+    border-radius: 4px;
+}
+.rcomp{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.bi-search{
+    border-radius: 20px;
+    background-color: #343434;
+color: rgb(103, 103, 103);
+padding: 10px;
+margin-right: 10px;
+}
+.search{
+    background-color: #343434;
+    border: none;
+    outline: none;
+width: 13rem;
+    
+}
+@media (max-width:773px){
+    .searchBar{
+        display: none;
+        
+        }
+}
+
+
+/**
+*! shop icon styles are here
+**/
+.shop{
+display: grid;
+grid-template-columns: repeat(6,150px);
+gap: 30px;
+justify-content: center;
+margin-bottom: 20px;
+}
+
+@media (max-width:1000px){
+    .shop{
+        grid-template-columns: repeat(4,150px);
+        
+        }
+}
+
+@media (max-width:900px){
+    .shop{
+        grid-template-columns: repeat(3,150px);
+        
+        }
+}
+@media (max-width:500px){
+    .shop{
+        grid-template-columns: repeat(2,150px);
+        
+        }
+}
+@media (max-width:347px){
+    .shop{
+        grid-template-columns: repeat(1,150px);
+        
+        }
+}
+
+
+.item{
+    border: 2px solid black;
+    border-radius: 4px;
+}
+.item:hover{
+    transform: scale(1.1);
+}
+.item img{
+    width: 100%;
+    border-radius: 2px;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.price-quantity{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons{
+    display: flex;
+    gap: 8px;
+    font-size: 18px;
+}
+
+.bi-dash-lg{
+    color: red;
+    
+}
+
+.bi-plus-lg{
+    color: green;
+}
+
+
+/**
+* !styles for label and buttton
+**/
+
+.text-center{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.HomeBtn,.checkOut,.removeAll {
+    background-color: #212529;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    padding: 8px;
+margin-top: 10px;
+    border-radius: 5px;
+}
+.removeAll {
+    background-color: red;
+}
+.checkOut{
+    background-color: green;
+}
+.bi-x-lg{
+    color: red;
+    font-weight: bold;
+}
+
+
+/**
+* !styles for shopping cart
+**/
+
+.shopping-cart{
+    display: grid;
+    grid-template-columns: repeat(1,320px);
+    justify-content: center;
+gap: 20px;
+}
+
+.cart-item{
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+}
+
+.title-price-x{
+    font-size: 16px;
+    width: 195px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-price{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-item-price{
+    background-color: #1b1b1b;
+    color: #fff;
+    padding: 3px 3px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+
+/**
+*!STYLING FOR DROPDOWNS
+**/
+.dropbtn {
+    background:transparent;
+    color: white;
+    padding: 16px;
+    font-size: 26px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    width: 180px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: rgb(53, 53, 53);}
+  
+  .show {display: block;}

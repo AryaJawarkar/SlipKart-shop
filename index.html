@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SlipKart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="navbar">
+
+        <a href="index.html">
+
+            <h2>SlipKart</h2>
+        </a>
+<div class="searchBar">
+    <i class="bi bi-search"><input type="text"  placeholder="Hoodies,Tshirts,Trousers" class="search"></i>
+</div>
+
+<div class="rcomp">
+    <div class="dropdown" id="more">
+        <button onclick="myFunction()" class="dropbtn"><i class="bi bi-person"></i> User</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href=""><i class="bi bi-person-circle"></i> My Profile</a>
+            <a href=""><i class="bi bi-bag-check-fill"></i> Orders</a>
+            <a href=""><i class="bi bi-card-checklist"></i> Wishlist</a>
+            <a href=""><i class="bi bi-box2-heart"></i> Gift Cards</a>
+            <a href=""><i class="bi bi-box-arrow-left"></i> Logout</a>
+        </div>
+    </div>
+    <a href="cart.html">
+        <div class="cart">
+            <i class="bi bi-cart4"></i>
+            <div id="cartAmount" class="cartAmount">0</div>
+        </div>
+    </a>
+</div>
+    </div>
+
+    <div class="shop" id="shop">
+
+    </div>
+
+</body>
+<script src="data.js"></script>
+<script src="main.js"></script>
+
+</html>
